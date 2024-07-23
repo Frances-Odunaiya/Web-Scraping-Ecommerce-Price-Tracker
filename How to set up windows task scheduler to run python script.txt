@@ -1,0 +1,71 @@
+To schedule a Python script to run multiple times a day for a specific number of days using Windows Task Scheduler, follow these steps:
+
+1. Prepare Your Python Script:
+Make sure your Python script is ready and executable. For instance, save your script as your_script.py.
+
+2. Create a Batch File:
+Create a batch file to execute your Python script. This file will be used by Windows Task Scheduler to run your script.
+
+Open a text editor (e.g., Notepad++).
+
+Add the following lines to the text file:
+
+@echo off
+python "C:\path\to\your_script.py"
+Note: Replace C:\path\to\your_script.py with the full path to your Python script.
+
+Save the file with a .bat extension, for example, run_script.bat.
+
+3. Open Windows Task Scheduler:
+Press Windows + R to open the Run dialog.
+Type taskschd.msc and press Enter to open Task Scheduler.
+
+4. Create a New Task:
+In Task Scheduler, click on "Create Task..." in the right-hand Actions pane.
+
+General Tab:
+
+Name: Enter a name for your task, such as Run Python Script.
+Description: Optionally, add a description.
+Security Options: Choose "Run whether user is logged on or not" and check "Run with highest privileges."
+
+Triggers Tab:
+
+Click "New..." to create a new trigger.
+Begin the task: Choose "On a schedule."
+Settings: Choose "Daily."
+Start: Set the start date and time for the first day.
+Advanced settings: Check "Repeat task every" and set it to the interval you want (e.g., every 8 hours) and "for a duration of" 1 day. This will schedule the task to run multiple times a day for the specified number of days.
+
+Example:
+Repeat task every: 8 hours
+For a duration of: 1 day
+Click "OK" to save the trigger.
+
+Actions Tab:
+
+Click "New..." to create a new action.
+Action: Choose "Start a program."
+Program/script: Browse and select the batch file you created (run_script.bat).
+Click "OK" to save the action.
+
+Conditions Tab:
+
+You can leave the default settings or adjust them according to your needs.
+Settings Tab:
+
+Allow task to be run on demand: Check this if you want to run the task manually as well.
+If the task fails, restart every: Set according to your preferences.
+Click "OK" to create the task.
+
+5. Verify and Test:
+Ensure that your task is listed in the Task Scheduler Library.
+You can right-click the task and choose "Run" to test it immediately and ensure everything is set up correctly.
+
+Summary:
+Create a batch file to run your Python script.
+Open Windows Task Scheduler and create a new task.
+Set triggers to run the script multiple times a day.
+Set actions to execute the batch file.
+Verify that the task runs as expected.
+This setup will ensure your Python script runs three times a day for three days according to the schedule you've configured.
