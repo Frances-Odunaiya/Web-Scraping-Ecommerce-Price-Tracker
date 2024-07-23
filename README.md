@@ -3,3 +3,4 @@ A Python-based tool for monitoring product prices across multiple e-commerce web
 
 
 # Full Project will be here on July 26th, 2024
+Currently collecting data
