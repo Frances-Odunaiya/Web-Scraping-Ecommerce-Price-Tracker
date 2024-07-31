@@ -1,7 +1,7 @@
 # Web-Scraping-Ecommerce-Price-Tracker
 The Web-Scraping-Ecommerce-Price-Tracker is a Python-based tool designed to monitor the price of the iPhone 15 across multiple e-commerce websites. This project helps users track price changes and make informed budget decisions. It scrapes price data, converts it to Canadian Dollars (CAD), logs it in a CSV file, and sends email notifications based on specific criteria and visualizes the data using PowerBI.
 
-<img src = "" alt = "Price-Tracker" />
+<img src = "https://github.com/Frances-Odunaiya/Web-Scraping-Ecommerce-Price-Tracker/blob/main/Iphone%2015%20price%20Tracker.png" alt = "Price-Tracker" />
 
 ## Features
 **Web Scraping**: Extracts price data for the iPhone 15 from Flipkart, Amazon, and Cellular Savings using Selenium.
@@ -36,18 +36,19 @@ The Web-Scraping-Ecommerce-Price-Tracker is a Python-based tool designed to moni
 
 ## Installation & Usage
 1. Clone the repository:
-   ```bash
-   Copy code
-   git clone https://github.com/yourusername/Web-Scraping-Ecommerce-Price-Tracker.git
+      ```bash
+      Copy code
+      git clone https://github.com/yourusername/Web-Scraping-Ecommerce-Price-Tracker.git
    
 2. Install required dependencies:
-  ```bash
-  Copy code
-  pip install -r requirements.txt
+     ```bash
+     Copy code
+     pip install -r requirements.txt
+
 3. Run the script:
-  ```bash
-  Copy code
-  python price_tracker.py
+     ```bash
+     Copy code
+     python price_tracker.py
 
 
 ## Conclusion
