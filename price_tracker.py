@@ -37,8 +37,8 @@ def write_to_csv(product_name, website, price, currency):
 
 # Function to send email notification
 def send_email(subject, message):
-    sender_email = 'odunaiyafrances@gmail.com'
-    receiver_email = 'odunaiyafrances@yahoo.com'
+    sender_email = '*****@gmail.com'
+    receiver_email = '*****s@yahoo.com'
     
     msg = MIMEText(message)
     msg['Subject'] = subject
@@ -48,8 +48,8 @@ def send_email(subject, message):
     # SMTP details for your email provider
     smtp_server = 'smtp.gmail.com'
     smtp_port = 587  # Update with your SMTP port
-    smtp_username = 'odunaiyafrances@gmail.com'
-    smtp_password = 'vmlb zmxt iwty wwam'
+    smtp_username = '*****@gmail.com'
+    smtp_password = 'vmlb **** **** wwam'
 
     try:
         with smtplib.SMTP(smtp_server, smtp_port) as server:
